@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/test1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:gravity="left" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBar1"
+        android:layout_alignParentLeft="true"
+        android:text="　　紅"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+    
+         />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:text="　　綠"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditText01"
+        android:layout_toRightOf="@+id/lf_R"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="#003399"
+        android:digits="1234567890"
+        android:layout_alignBottom="@+id/EditText02" />
+
+    <EditText
+        android:id="@+id/EditText02"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lf_tv_G"
+ 
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="#003399"
+        android:digits="1234567890"
+        android:layout_alignRight="@+id/EditText03"            
+         />
+
+    <EditText
+        android:id="@+id/EditText03"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EditText01"
+        android:layout_alignBottom="@+id/EditText01"
+ android:layout_toRightOf="@+id/lf_tv_A"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="#003399" 
+        android:digits="1234567890"/>
+
+    <TextView
+        android:id="@+id/lf_tv_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditText01"
+        android:layout_marginLeft="170dp"
+        android:text="濾波量"
+        android:textSize="20dp"
+       />
+
+    <TextView
+        android:id="@+id/lf_R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText1"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:text="紅"
+        android:textSize="20dp"
+        android:paddingLeft="25dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar4"
+        android:layout_alignLeft="@+id/seekBar2"
+        android:layout_alignParentRight="true"
+        android:max="100" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar3"
+        android:layout_alignLeft="@+id/seekBar1"
+        android:layout_alignParentRight="true"
+        android:max="100" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar2"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@+id/lf_tv_A"
+        android:max="100" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 濾光"
+            android:textSize="30dip"
+            android:drawableLeft="@drawable/filter_final1" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="______________________________________________" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+          android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:background="#ffffff"
+        android:textSize="18dip"
+        android:text="濾掉多餘的光線讓您在使用3c產品時能使眼睛更舒適。您也可以降低螢幕亮度來減少藍光。" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/b_start"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/b_end" 
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:id="@+id/btn_checkcolor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/b_color"
+            
+             />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/b_main"
+             />
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditText01"
+        android:layout_toLeftOf="@+id/editText1"
+        android:text="藍"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+         android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar1"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:text="請調整濾光值，介於0%~100%，濾波量最高為80%。" 
+        android:layout_marginTop="230dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/tv_border"
+        android:padding="2dp"/>
+
+    <TextView
+        android:id="@+id/lf_tv_G"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lf_tv_A"
+        android:layout_centerHorizontal="true"
+        android:text="　　　綠"
+        android:textSize="20dp" 
+       android:layout_alignRight="@+id/lf_tv_A"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     
+        android:layout_alignTop="@+id/EditText03"
+        android:text="%"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/EditText03" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView9"
+        android:layout_toRightOf="@+id/EditText02"
+        android:text="%"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lf_tv_G"
+        android:layout_toRightOf="@+id/editText1"
+        android:text="%"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignTop="@+id/editText1"
+        android:text="%"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/textView12"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="30dp" 
+        android:id="@+id/linearLayout3"
+        android:layout_alignLeft="@+id/textView12">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/b_g" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/b_y" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/b_o" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_toRightOf="@+id/textView8" >
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lf_tv_G"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
+        android:max="80" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="18dp"
+        android:text="濾光器推薦顏色"
+        android:textSize="20dp" 
+        android:textStyle="bold" />"
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignTop="@+id/seekBar4"
+        android:text="濾波量"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_toLeftOf="@+id/textView10"
+        android:background="@drawable/shape"
+        android:digits="1234567890"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="3"
+       
+        android:textColor="#003399" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/seekBar2"
+        android:text="　　藍"
+        android:textSize="20dp" />
+
+</RelativeLayout>

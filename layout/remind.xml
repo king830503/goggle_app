@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/remindlayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:gravity="center_vertical" >
+
+    <Button
+        android:id="@+id/back_remind"
+         android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/b_main"
+       android:textColor="#000000"
+   android:layout_marginBottom="80dp"
+        android:layout_toRightOf = "@+id/cl_remind"
+      />
+
+    <TextView
+        android:id="@+id/remindtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/remindet"
+        android:layout_toRightOf="@+id/remindet"
+        android:text="分" />
+
+    <EditText
+        android:id="@+id/remindet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/op_remind"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="#003399"
+        android:width="100dp" 
+        android:digits="1234567890">
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+       android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 提醒"
+            android:textSize="30dip" 
+            android:drawableLeft="@drawable/remind_final1"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="______________________________________________" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radiogroup1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="70dp"
+        android:text="請選擇提醒時間:"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/re_rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="21dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:button="@drawable/button_02ra"
+            android:text="　三十分鐘" />
+
+        <RadioButton
+            android:id="@+id/re_rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioButton1"
+            android:layout_below="@+id/radioButton1"
+            android:layout_marginTop="22dp"
+            android:button="@drawable/button_02ra"
+            android:text="　一小時" />
+
+        <RadioButton
+            android:id="@+id/re_rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:button="@drawable/button_02ra"
+            android:text="　兩小時" />
+
+        <RadioButton
+            android:id="@+id/re_rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioButton1"
+            android:layout_below="@+id/radioButton1"
+            android:layout_marginTop="22dp"
+            android:button="@drawable/button_02ra"
+            android:text="　自訂" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:background="#ffffff"
+        android:textSize="18dip" 
+        android:text="成人使用每30分鐘就應該休息，動動筋骨閉個眼睛休息一下吧!" />
+
+    <TextView
+        android:id="@+id/use_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/cl_remind"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/op_remind"
+        android:background="@drawable/b_end"
+        android:layout_marginBottom="80dp" 
+        android:layout_marginRight="25dp"/>
+
+    <Button
+        android:id="@+id/op_remind"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/cl_remind"
+        android:layout_alignBottom="@+id/cl_remind"
+        android:layout_alignLeft="@+id/remindet"
+        android:background="@drawable/b_start"
+        android:layout_marginRight="25dp" />
+
+</RelativeLayout>

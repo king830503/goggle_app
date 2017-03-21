@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/theme_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/theme_final1"
+            android:text=" 環境設定"
+            android:textSize="30dip" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="______________________________________________" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/theme_modify"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="false"
+        android:background="@drawable/b_mo"
+        android:layout_alignBottom="@+id/theme_delete"
+        android:layout_toLeftOf="@+id/theme_delete"
+         />
+
+    <Button
+        android:id="@+id/theme_save"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/theme_setting"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:background="@drawable/b_save" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:text="設定好濾光、亮度、提醒時間後可直接儲存設定到環境設定內，方便您下次登入使用手機時可直接選擇已儲存設定。"
+        android:textSize="18dip" />
+
+    <Button
+        android:id="@+id/theme_setting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/theme_delete"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/b_set" />
+
+    <Button
+        android:id="@+id/theme_delete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout1"
+    
+        android:layout_toLeftOf="@+id/theme_setting"
+        android:background="@drawable/b_de"
+        android:layout_marginBottom="50dp" />
+
+    <TextView
+        android:id="@+id/theme_tv"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/theme_delete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="55dp"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/theme_back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/theme_setting"
+        android:layout_alignBottom="@+id/theme_setting"
+        android:layout_toLeftOf="@+id/theme_save"
+        android:background="@drawable/b_main" />
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="擁有的環境設定："
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/theme" />
+
+    </LinearLayout>
+
+</RelativeLayout>

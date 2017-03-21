@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/syn_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:gravity="top" >
+
+    <LinearLayout
+       android:id="@+id/linearLayout1"
+       android:layout_width="wrap_content"
+       android:layout_height="60dp"
+       android:layout_marginTop="15dp"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       android:orientation="vertical" 
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/syn_tv_result"
+            android:text="同步"
+            android:textSize="30dip"
+            android:drawableLeft="@drawable/bt_go" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/syn_back"
+            android:layout_below="@+id/textView1"
+            android:text="______________________________________________" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="40dp"
+        android:text="同步情況:" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+         android:layout_marginTop="18dp"
+         android:textSize="18dip"
+        android:text="　　手機自動感測亮度後直接改變電腦端的螢幕亮度，使電腦端的使用者可以根據手機感測後顯示出最適合亮度。" />
+
+    <Button
+        android:id="@+id/goggle_holdin"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignTop="@+id/syn_tv_result"
+        android:background="@drawable/b_go" 
+       android:layout_marginTop="69dp"/>
+
+    <TextView
+        android:id="@+id/syn_tv_result"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:maxLines="10" />
+
+    <Button
+        android:id="@+id/syn_to_theme"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/goggle_holdin"
+        android:layout_below="@+id/goggle_holdin"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/b_theme" />
+
+    <Button
+        android:id="@+id/syn_back"
+          android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/syn_to_theme"
+        android:layout_alignBottom="@+id/syn_to_theme"
+        android:layout_alignLeft="@+id/textView3"
+        android:background="@drawable/b_main" />
+
+</RelativeLayout>

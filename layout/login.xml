@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:gravity="top" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 會員登入"
+            android:textSize="30dip"
+            android:drawableLeft="@drawable/login_final1"  />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="______________________________________________" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical" 
+        android:background="#88D4D4D4"
+        >
+
+        <TextView
+            android:id="@+id/login_tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="帳號:"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/login_et_account"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:textColor="#003399"
+            android:textSize="25dp"
+            android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM" />
+
+        <TextView
+            android:id="@+id/login_tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密碼:"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/login_et_password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="#003399"
+            android:textSize="25dp"
+            android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="46dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/login_btn_login"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/b_login" />
+
+        <Button
+            android:id="@+id/login_btn_logout"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+         
+            android:background="@drawable/b_out" />
+
+        <Button
+            android:id="@+id/login_btn_add"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/b_regi" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn_back"
+         android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/b_main" />
+
+    <TextView
+        android:id="@+id/login_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout3" />
+
+</RelativeLayout>
